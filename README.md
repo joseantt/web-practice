@@ -1,3 +1,3 @@
-# Simple web mini project
+# Simple web project
 
-This is a simple static landing page for learning purposes.
+A simple static landing page for learning purposes.
