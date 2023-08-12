@@ -1,6 +1,8 @@
 :root{
     --background1: #1a1e25;
     --background2: #2d2842;
+    --textcolor: #e8e9eb;
+    --secondarycolor: #A2D729;
 }
 
 * {
@@ -10,7 +12,11 @@
     font-family: "Roboto", sans-serif;
 }
 
-/* -- Header section -- */
+body{
+    background: var(--textcolor);
+}
+
+/* -- header section -- */
 
 header{
     font-weight: bold;
@@ -19,12 +25,14 @@ header{
     position: fixed;
     z-index: 999;
     width: 100%;
+    top: 0;
 }
-.container{
+
+.logo{
     padding: 8px;
 }
 
-.container img{
+.logo img{
     width: 45px;
     height: auto;
 }
@@ -48,14 +56,14 @@ nav li{
 }
 
 nav a{
-    color: #e8e9eb;
+    color: var(--textcolor);
     text-decoration:none;
     text-transform: uppercase;
     font-size: medium;
 }
 
 nav a:hover{
-    color: #A2D729;
+    color: var(--secondarycolor);
 }
 
 .nav-toggle:checked ~ nav {
@@ -118,4 +126,54 @@ nav a:hover{
     }
 }
 
-/* --^ Header section ^-- */
+/* --^ header section ^-- */
+
+
+/* -- main section -- */
+
+main{
+    margin-top: 65px;
+}
+
+/* --^ main section ^-- */
+.color-block{
+    height: 14em;
+    width: 100%;
+    background: var(--secondarycolor);
+}
+
+.top-imgs{
+    position: absolute;
+    top: 12em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 340px 340px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / span 2;
+}
+
+.profile img{
+    width: 270px;
+    height: auto;
+    border-radius: 45px;
+    border: 7px solid var(--secondarycolor);
+}
+
+.computer{
+    display: block;
+    grid-column: 3 / span 3;
+    grid-row: 1 /span 2;
+}
+
+.computer img{
+    float:right;
+    width: 400px;
+    height: auto;
+}
