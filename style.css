@@ -218,3 +218,29 @@ main{
 .line{
     margin: 7em 5em 6em 5em;
 }
+
+/* --^ about section ^-- */
+
+
+/* -- skills section -- */
+
+.title{
+    margin-left: 5rem;
+}
+
+.skills-section{
+    margin: 3em 5em 0 5em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 35px;
+    background: var(--secondarycolor);
+    place-items: center;
+}
+
+.skills-section h3{
+    margin: 20px 0 20px 0;
+}
+
+.skills-section ul{
+    margin-bottom: 20px;
+}
